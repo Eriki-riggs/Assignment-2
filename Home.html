@@ -10,32 +10,30 @@
 
     <title>Home | Karz Online</title>
 
-    <!-- <script>  //Uncomment After Finishing
-        window.location.href = "index.html";
-
-        if (localStorage.getItem("loggedIn") !== "true") {
-            window.location.href = "index.html"; // Redirect back if not logged in
-            }
-    </script> -->
 </head>
 <body>
   
     <header>
         <div class="nav-bar">
             <nav>
-                <a href="index.html">Home</a>
+                <a href="Home.html">Home</a>
                 <a href="MainPages/product.html">Products</a>
                 <a href="MainPages/AboutUs.html">About Us</a>
                 <a href="MainPages/Contact.html">Contacts</a>
-                <a href=""></a>
+                <a href="MainPages/Reviews.html">Reviews</a>
             </nav>
         </div>
     </header>
 
 
     <div class="container">
-        <h2>Welcome To Karz Online</h2>
-        <p>Where You find the best deals on vehicles</p>
+
+        <div class="welcome">
+            <h2>Welcome To Karz Online</h2>
+            <p>Where You find the best deals on vehicles, whether it be buying or renting of offroad cars we are the place to help you with that.</p>
+            <button id="toProducts">Browse our cars</button>
+        </div>
+           
     </div>
 
 
@@ -43,6 +41,6 @@
 
 
 
-     <script src="script.js"></script>
+      <script src="script.js"></script> 
 </body>
 </html>
