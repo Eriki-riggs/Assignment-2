@@ -1,24 +1,32 @@
-// document.getElementById("toHome").addEventListener("click", function(){
-//     window.location.href="index.html";
-// });
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form from submitting normally
 
-// document.getElementById(LoginForm).addEventListener("submit",function(e){
-//     e.preventDefault();
-// })
+  let username = document.getElementById("userName").value;
+  let password = document.getElementById("password").value;
 
-// const Username= document.getElementById(userName);
-// const Password= document.getElementById(password);
+  const validUsername = "admin";
+  const validPassword = "password123";
 
-// console.log('Username:', Username);
-// console.log('Password:', Password);
-
-function validateForm() {
-    let x = document.forms["Logging"]["logIn"].value;
-    if (x == "") {
-      alert("Name must be filled out");
-      return false;
-    }
+  if (username === "" || password === "") {
+      alert("Both fields must be filled out.");
+      return;
   }
+
+  if(username === validUsername && password ===validPassword){
+    console.log('Login Successful');
+    localStorage.setItem("loggedIn", "true");
+    // Redirect to home page after successful login
+    window.location.href = "Home.html";
+  }
+  else{
+    alert("Invalid Username or Password");
+  }
+
+  console.log("Username:", username);
+  console.log("Password:", password);
+
+});
+
 
 
 

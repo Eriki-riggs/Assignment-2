@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="Main.css">
     <link rel="shortcut icon" href="../Assets/CarIcon.png" type="image/x-icon">
 
+    <script>
+        window.location.href = "login.html";
+
+        if (localStorage.getItem("loggedIn") !== "true") {
+            window.location.href = "../index.html"; // Redirect back if not logged in
+        }
+    </script>
+
     <title>Contact | Karz Online</title>
 </head>
 <body>

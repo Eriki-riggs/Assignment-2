@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Assets/CarIcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Assets/CarIcon.png" type="image/x-icon">
 
-    <title>Home | Karz Online</title>
+
+    <title>Login Page | Karz Online</title>
 </head>
 <body>
-  
+
     <header>
         <div class="nav-bar">
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="MainPages/product.html">Products</a>
-                <a href="MainPages/AboutUs.html">About Us</a>
-                <a href="MainPages/Contact.html">Contacts</a>
-                <a href=""></a>
-            </nav>
+            <h2>Karz Online.</h2>
         </div>
     </header>
 
+    <div class="login">
+        <div class="row" >
+            <h2>Log In to Continue</h2> 
+            <form id="loginForm" method="post" onsubmit="return validateForm()">
+                <label for="userName"></label>
+                <input type="text" id="userName" placeholder="Enter Your Username" required>
 
-    <div class="container">
-        
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Enter Your Password" required>
+
+                <button type="submit">Log In</button>
+            </form>
+        </div>
     </div>
 
 
 
-
-
-
-    <!-- <script src="script.js"></script> -->
+    
+   <script src="script.js"></script> 
 </body>
 </html>
